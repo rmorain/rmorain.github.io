@@ -1,11 +1,18 @@
 html, body {
   height: 100%;
 }
+
+@font-face {
+    font-family: open-sans;
+    src: url(OpenSans-VariableFont_wdth,wght.ttf)
+}
+
 body {
   display: flex;
   flex-direction: column;
   background: #2d3436; /*dracula orchid*/
-  color: #00b894; /*mint leaf*/
+  color: #dfe6e9; /*city lights*/
+  font-family: open-sans;
 }
 .content {
   flex: 1 0 auto;
