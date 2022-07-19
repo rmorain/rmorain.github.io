@@ -1,12 +1,17 @@
 html, body {
   height: 100%;
 }
+                
+.round_image {
+  border-radius: 50%;
+}
 
 @font-face {
     font-family: open-sans;
     src: url(OpenSans-VariableFont_wdth,wght.ttf)
 }
 
+/*Color template: https://flatuicolors.com/palette/us */
 body {
   display: flex;
   flex-direction: column;
@@ -14,13 +19,56 @@ body {
   color: #dfe6e9; /*city lights*/
   font-family: open-sans;
 }
+
+a {
+    color: #fd79a8; /*pico pink*/
+}
+
+h2 {
+    color: #fab1a0
+}
+
+h2 > a {
+    color: #a29bfe;
+}
+
+.icon {
+    max-width: 32px;
+}
+
 .content {
   flex: 1 0 auto;
+  max-width: 90%;
 }
 .footer {
   flex-shrink: 0;
 }
 
 .center {
+    justify-content: center; 
     margin: auto;
+}
+
+.item {
+    display: flex;
+    margin: 15px;
+}
+
+.horizontal_item {
+    margin-inline: 15px;
+}
+
+#pic_div {
+    width: 15%;
+}
+
+#profile_pic {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 480px) {
+    #pic_div {
+         width: 25%;
+    }
 }
