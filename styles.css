@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
                 
+header {
+    text-align: center;
+}
+
 .round_image {
   border-radius: 50%;
 }
